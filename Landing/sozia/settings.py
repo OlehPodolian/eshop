@@ -26,7 +26,8 @@ SECRET_KEY = '+-34_^p0a268ib(i5x54(x2xi$rxq6p=9oy_di&p2nhy@jt1!p'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'bce7-31-202-150-11.ngrok-free.app'
+    'bce7-31-202-150-11.ngrok-free.app',
+    'localhost'
 ]
 
 
@@ -41,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'contact',
     'shop',
-    'portfolio',
 ]
 
 MIDDLEWARE = [

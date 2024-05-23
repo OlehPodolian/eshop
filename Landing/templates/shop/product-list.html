@@ -38,10 +38,10 @@
                                             <select
                                                 class="form-select bg-light text-muted border fs-14 py-2 ms-sm-0 ms-1"
                                                 aria-label="Default select example">
-                                                <option selected>Most Popular </option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option selected>Найновіші</option>
+                                                <option value="1">Спочатку дешеві</option>
+                                                <option value="2">Спочатку дорогі</option>
+                                                <option value="3">Пополярні</option>
                                             </select>
                                         </div>
                                     </div>
@@ -99,69 +99,6 @@
                         </div>
                         <!-- end categories -->
 
-                        <!-- color -->
-                        <div class="mt-4">
-                            <div class="p-3 bg-light">
-                                <h6 class="mb-0">Choose Color</h6>
-                            </div>
-                            <div class="ms-3 my-3">
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckDefaulta2" />
-                                    <label class="form-check-label text-dark" for="flexCheckDefaulta2"><i
-                                            class="mdi mdi-circle ms-2 fs-16"></i> Red</label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckChecked55" checked />
-                                    <label class="form-check-label text-dark" for="flexCheckChecked55"><i
-                                            class="mdi mdi-circle text-primary ms-2 fs-16"></i> Blue</label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckChecked66" />
-                                    <label class="form-check-label text-dark" for="flexCheckChecked66"><i
-                                            class="mdi mdi-circle text-dark ms-2 fs-16"></i> Black</label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckChecked77" />
-                                    <label class="form-check-label text-dark" for="flexCheckChecked77"><i
-                                            class="mdi mdi-circle text-info ms-2 fs-16"></i> Cyan</label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckChecked88" />
-                                    <label class="form-check-label text-dark" for="flexCheckChecked88"><i
-                                            class="mdi mdi-circle text-warning ms-2 fs-16"></i> Yellow</label>
-                                </div>
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input fs-16" type="checkbox" value=""
-                                        id="flexCheckChecked99" />
-                                    <label class="form-check-label text-dark" for="flexCheckChecked99"><i
-                                            class="mdi mdi-circle text-success ms-2 fs-16"></i> Green</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end color -->
-
-                        <!-- items -->
-                        <div class="mt-4">
-                            <div class="p-3 bg-light">
-                                <h6 class="mb-0">Items</h6>
-                            </div>
-                            <div class="ms-3 my-3">
-                                <p class="d-inline-block text-dark fs-16">Select Items</p>
-                                <select class="form-select d-inline-block border w-50 ms-5 ms-md-2"
-                                    id="autoSizingSelect">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- end item -->
-
                         <!-- start price -->
                         <div class="mt-4">
                             <div class="p-3 bg-light mb-3">
@@ -218,10 +155,6 @@
                                     <ins class="pe-1 fs-16 fw-semibold text-decoration-none text-dark">$209.00</ins>
                                     <del class="text-muted fs-16">$230.00</del>
                                 </div>
-                                <div class="rating d-inline-block ps-4">
-                                    <i class="mdi mdi-star fs-20 text-warning d-inline-block"></i>
-                                    <h5 class="d-inline-block fs-16">5.0</h5>
-                                </div>
 
                                 <a href="{% url 'product-detail' %}">
                                     <h6 class="fw-semibold lh-base fs-18 mt-3">Maxbell USB Rechargeable Electronic</h6>
@@ -236,8 +169,6 @@
                                             class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
                                     <a href="{% url 'product-detail' %}"><i
                                             class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
-                                    <a href="{% url 'product-cart' %}"><i
-                                            class="mdi mdi-heart-outline fs-22 fw-bolder pro-icon"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -260,10 +191,6 @@
                                     <ins class="pe-1 fs-16 fw-semibold text-decoration-none text-dark">$309.00</ins>
                                     <del class="text-muted fs-16">$230.00</del>
                                 </div>
-                                <div class="rating d-inline-block ps-4">
-                                    <i class="mdi mdi-star fs-20 text-warning d-inline-block"></i>
-                                    <h5 class="d-inline-block fs-16">5.0</h5>
-                                </div>
 
                                 <a href="{% url 'product-detail' %}">
                                     <h6 class="fw-semibold lh-base fs-18 mt-3">PRd PU Tan Casual regular Walletious</h6>
@@ -278,8 +205,6 @@
                                             class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
                                     <a href="{% url 'product-detail' %}"><i
                                             class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
-                                    <a href="{% url 'product-cart' %}"><i
-                                            class="mdi mdi-heart-outline fs-22 fw-bolder pro-icon"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -304,10 +229,6 @@
                                     <ins class="pe-1 fs-16 fw-semibold text-decoration-none text-dark">$109.00</ins>
                                     <del class="text-muted fs-16">$230.00</del>
                                 </div>
-                                <div class="rating d-inline-block ps-4">
-                                    <i class="mdi mdi-star fs-20 text-warning d-inline-block"></i>
-                                    <h5 class="d-inline-block fs-16">5.0</h5>
-                                </div>
 
                                 <a href="{% url 'product-detail' %}">
                                     <h6 class="fw-semibold lh-base fs-18 mt-3">Children Decorated Shoes Cotton Green
@@ -323,8 +244,6 @@
                                             class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
                                     <a href="{% url 'product-detail' %}"><i
                                             class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
-                                    <a href="{% url 'product-cart' %}"><i
-                                            class="mdi mdi-heart-outline fs-22 fw-bolder pro-icon"></i></a>
                                 </div>
                             </div>
                         </div>

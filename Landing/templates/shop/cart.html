@@ -7,11 +7,8 @@
             <div class="row">
                 <div class="col-lg-9">
                     <div class="page-title">
-                        <h2 class="text-dark fw-light lh-base mt-5">All you need is in your <span
-                                class="fw-medium title">cart</span> now.</h2>
-                        <p class="fs-16 text-muted mb-0">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                            consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean
-                            sollicitudin, adipisicing elit sed lorem quis bibendum auctor.</p>
+                        <h2 class="text-dark fw-light lh-base mt-5"><span
+                                class="fw-medium title">Ваша корзина</span> містить наступні товари:</h2>
                     </div>
                 </div>
             </div>
@@ -30,19 +27,22 @@
                             <thead class="bg-light text-dark">
                                 <tr>
                                     <th scope="col" class="fw-semibold mt-2">
-                                        Products
+                                        Товари
                                     </th>
                                     <th scope="col" class="fw-semibold mt-2">
-                                        Price
+                                        Ціна
                                     </th>
                                     <th scope="col" class="fw-semibold mt-2">
-                                        Discount
+                                        Знижка
                                     </th>
                                     <th scope="col" class="fw-semibold mt-2">
-                                        Quantity
+                                        Кількість
                                     </th>
                                     <th scope="col" class="fw-semibold mt-2">
-                                        Remove
+                                        Вартість
+                                    </th>
+                                    <th scope="col" class="fw-semibold mt-2">
+                                        Видалити
                                     </th>
                                 </tr>
                             </thead>
@@ -56,8 +56,8 @@
                                         <h5 class="fs-16 fw-medium">Smart 720p CCTV</h5>
                                         <div class="price d-inline-block">
                                             <ins
-                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">$29.00</ins>
-                                            <del class="text-muted fs-15">$30.00</del>
+                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">29.00</ins>
+                                            <del class="text-muted fs-15">30.00</del>
                                         </div>
                                     </td>
                                     <td>
@@ -75,8 +75,14 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0)" class="text-dark fw-semibold">Remove <span
-                                                class="mx-3">|</span> Add To Wishlist</a>
+                                        <div class="price d-inline-block">
+                                            <ins
+                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">59.00</ins>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="text-dark fw-semibold">Видалити <span
+                                                class="mx-3"></span></a>
                                     </td>
                                 </tr>
                                 <tr class="align-middle">
@@ -88,8 +94,8 @@
                                         <h5 class="fs-16 fw-medium">Dell Laptop core pro</h5>
                                         <div class="price d-inline-block">
                                             <ins
-                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">$49.00</ins>
-                                            <del class="text-muted fs-15">$59.00</del>
+                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">49.00</ins>
+                                            <del class="text-muted fs-15">59.00</del>
                                         </div>
                                     </td>
                                     <td>
@@ -107,8 +113,14 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0)" class="text-dark fw-semibold">Remove <span
-                                                class="mx-3">|</span> Add To Wishlist</a>
+                                        <div class="price d-inline-block">
+                                            <ins
+                                                class="text-dark pe-1 fs-15 fw-semibold text-decoration-none">100.00</ins>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0)" class="text-dark fw-semibold">Видалити <span
+                                                class="mx-3"></span></a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -124,10 +136,6 @@
                                 <div class="col-sm-6 col-5">
                                     <input type="text" class="form-control bg-light border" id="inputCode" />
                                 </div>
-                                <div class="col-sm-3 col-4">
-                                    <a href="javascript:void(0)" class="btn btn-secondary">Apply <i class="icon-xs"
-                                            data-feather="arrow-right"></i></a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 offset-lg-2 mt-4">
@@ -136,25 +144,19 @@
                                     <li class="list-inline-item">
                                         <h5 class="fs-15 mb-0 fw-semibold">Price :</h5>
                                     </li>
-                                    <li class="list-inline-item float-end text-dark">$259.00</li>
-                                </ul>
-                                <ul class="list-unstyled list-inline border-bottom py-3 mb-0">
-                                    <li class="list-inline-item">
-                                        <h5 class="fs-15 mb-0 fw-semibold">Delivery Charge :</h5>
-                                    </li>
-                                    <li class="list-inline-item float-end text-dark text-primary">Free</li>
+                                    <li class="list-inline-item float-end text-dark">259.00</li>
                                 </ul>
                                 <ul class="list-unstyled list-inline border-bottom py-3 mb-0">
                                     <li class="list-inline-item">
                                         <h5 class="fs-15 mb-0 fw-semibold">Discount :</h5>
                                     </li>
-                                    <li class="list-inline-item float-end text-dark">$100.00</li>
+                                    <li class="list-inline-item float-end text-dark">100.00</li>
                                 </ul>
                                 <ul class="list-unstyled list-inline py-3 mb-0">
                                     <li class="list-inline-item">
                                         <h5 class="fs-16 mb-0 fw-semibold">Total :</h5>
                                     </li>
-                                    <li class="list-inline-item fs-16 fw-semibold text-dark float-end">$159.00</li>
+                                    <li class="list-inline-item fs-16 fw-semibold text-dark float-end">159.00</li>
                                 </ul>
                                 <a href="{% url 'product-checkout' %}" class="btn btn-primary mt-3 float-end">Proceed To
                                     Checkout <i class="icon-xs icon" data-feather="arrow-right"></i></a>

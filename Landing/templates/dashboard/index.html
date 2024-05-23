@@ -6,15 +6,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <h2 class="text-dark fw-light lh-base mt-5">Founded and based in <span
-                            class="fw-medium title">New York</span>, We are sozia, a design and branding agency with partners
-                        worldwide.</h2>
+                    <h2 class="text-dark fw-light lh-base mt-5">Заснований та розташований в <span
+                            class="fw-medium title">Харкові</span>, Магазин всякої фігні.</h2>
                 </div>
             </div>
         </div>
         <!-- end container -->
     </section>
     <!-- End Title -->
+    <section class="hero position-relative overflow-hidden align-items-center" id="new_products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2 class="text-dark fw-light lh-base mt-5"><span
+                            class="fw-medium title">Нові надходження</span></h2>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
 
 
     <!-- shuffle portfolio -->
@@ -23,19 +33,17 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 filters-group-wrap mb-3">
                     <div class="filters-group">
-
-
                         <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
                             <li class="list-inline-item categories position-relative active my-sm-0 my-2"
-                                data-group="all"><a href="javascript:void(0)">All</a></li>
+                                data-group="all"><a href="javascript:void(0)">Всі</a></li>
                             <li class="list-inline-item categories position-relative my-sm-0 my-2 "
-                                data-group="branding"><a class="" href="javascript:void(0)">Branding</a></li>
+                                data-group="branding"><a class="" href="javascript:void(0)">Категорія №1</a></li>
                             <li class="list-inline-item categories position-relative my-sm-0 my-2"
-                                data-group="designing"><a href="javascript:void(0)">Designing</a></li>
+                                data-group="designing"><a href="javascript:void(0)">Категорія №2</a></li>
                             <li class="list-inline-item categories position-relative my-sm-0 my-2"
-                                data-group="photography"><a href="javascript:void(0)">Photography</a></li>
+                                data-group="photography"><a href="javascript:void(0)">Категорія №3</a></li>
                             <li class="list-inline-item categories position-relative my-sm-0 my-2"
-                                data-group="development"><a href="javascript:void(0)">Development</a></li>
+                                data-group="development"><a href="javascript:void(0)">Категорія №4</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,232 +51,252 @@
             </div>
             <!--end row-->
 
-            <div id="grid" class="row">
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img1.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Iphone Mockup</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Branding</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4" data-groups='["designing"]'>
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-1.jpg'%}" alt="" />
+                                    <span
+                                        class="text-dark badge bg-light rounded-3 fs-14 fw-bold position-absolute top-0 start-0 mt-2 ms-2 py-2">-20%</span>
 
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-2.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img3.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Mockup Collection</a>
-                                </h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Mockup</p>
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">29.00</ins>
+                                        <del class="text-muted fs-15">30.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Maxbell USB Rechargeable Electronic
+                                            Flameless</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["photography"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-3.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img2.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Abstract Images</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Abstract</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-2.jpg'%}" alt="" />
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">35.00</ins>
+                                        <del class="text-muted fs-15">45.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">PRd PU Tan Casual regular
+                                            Walletious</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-4.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img4.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Yellow Background with Books</a>
-                                </h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Books</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-3.jpg'%}" alt="" />
+                                    <span
+                                        class="text-dark badge bg-light rounded-3 fs-14 fw-bold position-absolute top-0 start-0 mt-2 ms-2 py-2">-18%</span>
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">20.00</ins>
+                                        <del class="text-muted fs-15">30.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Children Decorated Shoes Cotton
+                                            Green</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img6.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Company V-card</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">V-card</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-4.jpg'%}" alt="" />
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">39.00</ins>
+                                        <del class="text-muted fs-15">59.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Maxbell USB Rechargeable Electronic
+                                            Flameless</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-6.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img9.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Mockup Box with
-                                        Paints</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Photography</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-5.jpg'%}" alt="" />
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">35.00</ins>
+                                        <del class="text-muted fs-15">45.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">PRd PU Tan Casual regular
+                                            Walletious</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-7.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img8.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Coffee Cup</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Cups</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-6.jpg'%}" alt="" />
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">20.00</ins>
+                                        <del class="text-muted fs-15">30.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Children Decorated Shoes Cotton
+                                            Green</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-8.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img7.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Yellow Background with Books</a>
-                                </h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Books</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-7.jpg'%}" alt="" />
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">99.00</ins>
+                                        <del class="text-muted fs-15">95.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Maxbell USB Rechargeable Electronic
+                                            Flameless</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-9.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img12.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Pen and Article</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Article</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-8.jpg'%}" alt="" />
+                                    <span
+                                        class="text-dark badge bg-light rounded-3 fs-14 fw-bold position-absolute top-0 start-0 mt-2 ms-2 py-2">-26%</span>
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">35.00</ins>
+                                        <del class="text-muted fs-15">45.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">PRd PU Tan Casual regular
+                                            Walletious</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-1.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img10.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Yellow Background with Books</a>
-                                </h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Books</p>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product-item mt-4">
+                                <div class="product-img rounded position-relative">
+                                    <img class="img-fluid" src="{% static 'images/products/pro-9.jpg'%}" alt="" />
+                                    <span
+                                        class="text-dark badge bg-light rounded-3 fs-14 fw-bold position-absolute top-0 start-0 mt-2 ms-2 py-2">-15%</span>
+                                    <div
+                                        class="hover-content text-center w-100 position-absolute bottom-0 start-50 translate-middle-x py-2 mb-3">
+                                        <a href="{% url 'product-cart' %}"><i
+                                                class="mdi mdi-cart-outline fs-22 me-3 pe-3 fw-bolder pro-icon text-dark border-end"></i></a>
+                                        <a href="{% url 'product-detail' %}"><i
+                                                class="mdi mdi-eye-outline fs-22 me-3 pe-3 fw-bolder pro-icon border-end active"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-content my-3">
+                                    <div class="d-flex align-items-center">
+                                        <ins class="pe-2 fs-15 fw-semibold text-decoration-none text-dark">20.00</ins>
+                                        <del class="text-muted fs-15">30.00</del>
+                                    </div>
+                                    <a href="{% url 'product-detail' %}">
+                                        <p class="text-muted fw-normal lh-base my-1">Children Decorated Shoes Cotton
+                                            Green</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <!-- end col -->
                     </div>
+                    <!-- end row -->
                 </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-7.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img11.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Coffee Cup</a></h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Cups</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                    <div
-                        class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <a href="javascript:void(0)" data-src="{% static 'images/works/img-8.jpg'%}" data-gallery="myGal"
-                                class="d-inline-block" title="">
-                                <img src="{% static 'images/works/img5.jpg'%}" class="img-fluid rounded" alt="work-image" />
-                            </a>
-                            <div class="content bg-light p-3 shadow">
-                                <h6><a href="{% url 'work-detail' %}"
-                                        class="text-dark fw-medium fs-15">Yellow Background with Books</a>
-                                </h6>
-                                <p class="fs-14 text-muted font-weight-normal tag mb-0">Books</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end col-->
             </div>
             <!--end row-->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center mt-5">
-                        <a href="{% url 'work' %}" class="btn btn-primary me-2">More Works <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{% url 'about' %}" class="btn btn-primary me-2">Всі товари<i class="mdi mdi-arrow-right ms-1"></i></a>
                         <a href="{% url 'contact' %}" class="btn btn-primary">Get In Touch <i class="mdi mdi-lifebuoy ms-1"></i></a>
                     </div>
                 </div>
